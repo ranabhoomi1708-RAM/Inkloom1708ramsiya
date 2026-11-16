@@ -1,0 +1,6 @@
+{
+  "name": "Inkloom AI",
+  "description": "Pre-publication verification and approval platform for marketing copy and creative assets — evidence-first claim substantiation, India ASCI & CCPA rule checks, visual accessibility auditing, and immutable governance trails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

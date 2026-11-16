@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F7F4EC;
+  --color-warmWhite: #FFFDF9;
+  --color-deepTeal: #133B3B;
+  --color-teal: #1A6B66;
+  --color-teal-dark: #13524E;
+  --color-teal-light: #258B85;
+  --color-coral: #E8775D;
+  --color-coral-light: #FDF0EC;
+  --color-mint: #DCEEEB;
+  --color-blush: #FAE3DC;
+  --color-status-approved: #2E9E6B;
+  --color-status-revision: #E0A030;
+  --color-status-risk: #D9534F;
+
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-soft: 0 2px 12px -2px rgba(19, 59, 59, 0.06), 0 4px 20px -4px rgba(19, 59, 59, 0.04);
+  --shadow-soft-lg: 0 8px 30px -4px rgba(19, 59, 59, 0.08), 0 4px 12px -2px rgba(19, 59, 59, 0.04);
+
+  --animate-fadeIn: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  body {
+    background-color: #F7F4EC;
+    color: #133B3B;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F4EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DCEEEB;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1A6B66;
+}
+
+/* Typography Helpers */
+.caps-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1A6B66;
+}
+
+/* Highlighted spans in content preview */
+.highlight-high {
+  background-color: rgba(232, 119, 93, 0.22);
+  border-bottom: 2px solid #E8775D;
+  border-radius: 2px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.highlight-high:hover, .highlight-high.active {
+  background-color: rgba(232, 119, 93, 0.4);
+  box-shadow: 0 0 0 2px rgba(232, 119, 93, 0.3);
+}
+
+.highlight-medium {
+  background-color: rgba(224, 160, 48, 0.2);
+  border-bottom: 2px solid #E0A030;
+  border-radius: 2px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.highlight-medium:hover, .highlight-medium.active {
+  background-color: rgba(224, 160, 48, 0.38);
+  box-shadow: 0 0 0 2px rgba(224, 160, 48, 0.3);
+}
+
+.highlight-low {
+  background-color: rgba(46, 158, 107, 0.18);
+  border-bottom: 2px solid #2E9E6B;
+  border-radius: 2px;
+  padding: 1px 3px;
+  cursor: pointer;
+}
+
+.highlight-low:hover, .highlight-low.active {
+  background-color: rgba(46, 158, 107, 0.35);
+  box-shadow: 0 0 0 2px rgba(46, 158, 107, 0.25);
+}

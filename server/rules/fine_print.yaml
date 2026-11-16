@@ -1,0 +1,32 @@
+label: "inspired by ASCI Disclaimer Guidelines and CCPA Clarity Rules, checklist aid, not legal advice"
+pack: "fine_print"
+disclaimer: "checklist aid, not legal advice"
+
+rules:
+  - id: "FIN-AST-01"
+    title: "Obscured Qualifying Conditions Behind Asterisks"
+    category: "fine_print"
+    severity: "medium"
+    type: "regulatory"
+    triggers:
+      - "\\*conditions apply"
+      - "\\*terms apply"
+      - "\\*t&c"
+      - "\\*\\s*subject to"
+      - "read fine print"
+    explanation_template: "Asterisks cannot be used to contradict or negate the headline promise. Qualifying facts must be placed in prominent proximate copy."
+    why_hurts_trust: "Burying real conditions in microscopic footnotes makes buyers feel intentionally deceived."
+    source_label: "ASCI Guidelines on Disclaimers 2023"
+
+  - id: "FIN-LEG-02"
+    title: "Illegible Legalese or Diminutive Footnotes"
+    category: "fine_print"
+    severity: "low"
+    type: "accessibility"
+    triggers:
+      - "see packaging for legal details"
+      - "subject to jurisdiction"
+      - "disclaimer in tiny font"
+    explanation_template: "Legal disclaimers must meet minimum contrast and font size readability thresholds across all viewing devices."
+    why_hurts_trust: "Unreadable text raises immediate suspicion that critical catches are being concealed."
+    source_label: "Consumer Protection Disclosure Transparency"

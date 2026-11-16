@@ -1,0 +1,60 @@
+label: "inspired by the ASCI Code and CCPA 2022 guidelines, checklist aid, not legal advice"
+pack: "india_ad_code"
+
+rules:
+  - id: "IND-SUB-01"
+    title: "Substantiation of Quantitative Efficacy Claims"
+    type: "claim"
+    severity: "high"
+    description: "Advertisements must not mislead consumers regarding product efficacy. Quantitative claims (e.g. percentages, lesion reduction, timeframe) must be substantiated with reliable, independent, and documented evidence such as clinical trials."
+    keywords: ["%", "percent", "lesion", "reduction", "tested", "proven", "trial", "results in"]
+    disclaimer: "Checklist aid, not legal advice."
+
+  - id: "IND-ABS-02"
+    title: "Prohibition of Absolute Miracle Guarantees"
+    type: "claim"
+    severity: "high"
+    description: "Claims guaranteeing 100% cure, complete elimination of physiological conditions (such as acne or scarring), or permanent eradication without qualification are misleading and prohibited."
+    keywords: ["100%", "permanent", "completely removes", "guaranteed cure", "eradicates forever", "instant cure", "miracle"]
+    disclaimer: "Checklist aid, not legal advice."
+
+  - id: "IND-HLT-03"
+    title: "Health & Dermatological Results Needing Qualification"
+    type: "regulatory"
+    severity: "high"
+    description: "Skincare products containing active chemical exfoliants or actives (e.g. salicylic acid, AHAs, retinoids) must disclose necessary precautions, including mandatory daily sun protection (SPF)."
+    keywords: ["salicylic", "willow", "willow bark", "willow extract", "glycolic", "aha", "bha", "peel", "retinol", "exfoliant"]
+    requires_accompanying: ["spf", "sunscreen", "sun protection"]
+    disclaimer: "Checklist aid, not legal advice."
+
+  - id: "IND-DISC-04"
+    title: "Disclaimer Legibility and Prominence"
+    type: "regulatory"
+    severity: "medium"
+    description: "Disclaimers and qualifications must be prominent, easily readable, and placed in close proximity to the headline claim, rather than buried in fine print."
+    keywords: ["*conditions apply", "*terms apply", "see back of pack", "fine print", "*"]
+    disclaimer: "Checklist aid, not legal advice."
+
+  - id: "IND-INF-05"
+    title: "Influencer and Endorsement Disclosure"
+    type: "regulatory"
+    severity: "high"
+    description: "Influencer posts and sponsored endorsements must carry prominent, upfront disclosure labels such as #Ad, #Sponsored, or #Collab so consumers readily identify commercial connections."
+    keywords: ["influencer", "ambassador", "sponsored", "partnership", "endorsed by", "collab", "ad"]
+    disclaimer: "Checklist aid, not legal advice."
+
+  - id: "IND-CMP-06"
+    title: "Comparative Advertising Fairness"
+    type: "claim"
+    severity: "medium"
+    description: "Comparative claims (e.g., 'better than other brands', 'leading market competitor') must compare like products on identical parameters and must not unfairly disparage or denigrate competitors."
+    keywords: ["better than", "superior to", "unlike other brands", "leading brand", "beats competitors"]
+    disclaimer: "Checklist aid, not legal advice."
+
+  - id: "IND-FRE-07"
+    title: "Free Offer & Promotional Conditions Transparency"
+    type: "regulatory"
+    severity: "medium"
+    description: "When goods are described as 'free' or 'risk-free', consumers must not incur any hidden cost beyond unavoidable delivery fees, and any qualifying conditions must be stated alongside."
+    keywords: ["free", "risk-free", "zero cost", "complimentary gift", "money-back guarantee"]
+    disclaimer: "Checklist aid, not legal advice."
